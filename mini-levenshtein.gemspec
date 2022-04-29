@@ -1,29 +1,32 @@
 # frozen_string_literal: true
 
-$LOAD_PATH.push File.expand_path("lib", __dir__)
-
-require "mini-levenshtein/version"
+lib = File.expand_path('lib', __dir__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'mini-levenshtein/version'
 
 Gem::Specification.new do |s|
-  s.required_ruby_version = ">= 2.4"
-  s.name = "mini-levenshtein"
+  s.name = 'mini-levenshtein'
   s.version = MiniLevenshtein::VERSION
-  s.homepage = "https://github.com/combinaut/mini-levenshtein"
-  s.authors = ["Combinaut Team"]
-  s.email = "hello@combinaut.com"
-  s.license = "MIT"
-  s.summary = "Simple, fast, levenshtein distance"
-  s.description = "This gem implements pure Levenshtein algorithm"
-  s.files = `git ls-files -z`.split("\x0").
-            reject { |f| f.match(%r{^(test|spec|features)/}) }
-  s.extensions = ["ext/mini_levenshtein/extconf.rb"]
-  s.require_paths = ["lib", "lib/mini-levenshtein"]
+  s.authors = ['Delon Newman']
+  s.email = 'contact@delonnewman.name'
 
-  s.add_development_dependency "bundler", "~> 2.1"
-  s.add_development_dependency "byebug", "~> 11.0"
-  s.add_development_dependency "rake", "~> 13.0"
-  s.add_development_dependency "rake-compiler", "~> 1.1"
-  s.add_development_dependency "rspec", "~> 3.9"
-  s.add_development_dependency "rubocop", "~> 0.88"
-  s.add_development_dependency "ruby-prof", "~> 1.4"
+  s.summary = 'Simple, fast, levenshtein distance & ratio'
+  s.description = s.summary
+  s.homepage = 'https://github.com/delonnewman/mini-levenshtein'
+  s.license = 'MIT'
+
+  if s.respond_to?(:metadata)
+    s.metadata['allowed_push_host'] = 'https://rubygems.org'
+
+    s.metadata['homepage_uri'] = s.homepage
+    s.metadata['source_code_uri'] = s.homepage
+    s.metadata['changelog_uri'] = "#{s.homepage}#changelog"
+    s.metadata['documentation_uri'] = "https://www.rubydoc.info/gems/#{s.name}"
+  else
+    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
+  end
+
+  s.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
+  s.extensions = ['ext/mini_levenshtein/extconf.rb']
+  s.require_paths = ['lib']
 end
