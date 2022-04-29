@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.authors = ['Delon Newman']
   s.email = 'contact@delonnewman.name'
 
-  s.summary = 'Simple, fast, levenshtein distance & ratio'
+  s.summary = 'Simple, fast, levenshtein distance'
   s.description = s.summary
   s.homepage = 'https://github.com/delonnewman/mini-levenshtein'
   s.license = 'MIT'
