@@ -12,6 +12,7 @@ module MiniLevenshtein
     return 1.0 if lensum.zero?
 
     distance = internal_distance(string1, string2, 1)
+    return 1.0 if distance.zero?
 
     (lensum - distance) / lensum.to_f
   end
