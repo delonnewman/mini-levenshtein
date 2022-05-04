@@ -1,9 +1,9 @@
 RSpec.describe MiniLevenshtein do
-  describe '.distance' do
+  describe '.edit_distance' do
     context 'when either argument is not a string' do
       it 'will raise a type error' do
         pairs_of_string_and_non_string.each do |(a, b)|
-          expect { described_class.distance(a, b) }.to raise_error(TypeError)
+          expect { described_class.edit_distance(a, b) }.to raise_error(TypeError)
         end
       end
     end
@@ -13,7 +13,7 @@ RSpec.describe MiniLevenshtein do
         examples = 50.times.map { 2.times.map { Faker::String.random } }
 
         examples.each do |(a, b)|
-          expect(described_class.distance(a, b)).to be_a(Numeric)
+          expect(described_class.edit_distance(a, b)).to be_a(Numeric)
         end
       end
     end
@@ -23,24 +23,24 @@ RSpec.describe MiniLevenshtein do
         examples = 50.times.map { s = Faker::String.random; [s, s.dup] }
 
         examples.each do |(a, b)|
-          expect(described_class.distance(a, b)).to be_zero
+          expect(described_class.edit_distance(a, b)).to be_zero
         end
       end
     end
   end
 
-  describe '.ratio' do
+  describe '.similarity' do
     context 'when either argument is not a string' do
       it 'will raise a type error' do
         pairs_of_string_and_non_string.each do |(a, b)|
-          expect { described_class.ratio(a, b) }.to raise_error(TypeError)
+          expect { described_class.similarity(a, b) }.to raise_error(TypeError)
         end
       end
     end
 
     context 'when both arguments are empty strings' do
       it 'will return 1.0' do
-        expect(described_class.ratio('', '')).to be 1.0
+        expect(described_class.similarity('', '')).to be 1.0
       end
     end
 
@@ -49,7 +49,7 @@ RSpec.describe MiniLevenshtein do
         examples = 50.times.map { s = Faker::String.random; [s, s.dup] }
 
         examples.each do |(a, b)|
-          expect(described_class.ratio(a, b)).to be 1.0
+          expect(described_class.similarity(a, b)).to be 1.0
         end
       end
     end
@@ -59,7 +59,7 @@ RSpec.describe MiniLevenshtein do
         examples = 50.times.map { 2.times.map { Faker::String.random } }
 
         examples.each do |(a, b)|
-          expect(described_class.ratio(a, b)).to be_a(Float)
+          expect(described_class.similarity(a, b)).to be_a(Float)
         end
       end
     end

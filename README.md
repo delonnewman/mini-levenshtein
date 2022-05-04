@@ -5,9 +5,9 @@ Simple, fast, levenshtein distance
 # Synopsis
 
 ```ruby
-MiniLevenshtein.distance("levenshtein", "levenstien") # => 3
+MiniLevenshtein.edit_distance("levenshtein", "levenstien") # => 3
 
-MiniLevenshtein.ratio("levenshtein", "levenstien") # 0.857142...
+MiniLevenshtein.similarity("levenshtein", "levenstien") # 0.857142...
 ```
 
 # Credits
