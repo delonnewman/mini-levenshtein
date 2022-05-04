@@ -4,6 +4,8 @@ module MiniLevenshtein
   extend MiniLevenshteinInternal
 
   class << self
+    private :internal_distance
+    
     # Compute absolute Levenshtein distance of two strings.
     #
     # @example (it's hard to spell Levenshtein correctly):
