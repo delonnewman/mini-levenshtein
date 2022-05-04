@@ -1,8 +1,3 @@
-#include <string.h>
-#include <math.h>
-#include <wchar.h>
-#include <stdlib.h>
-
 #include "ruby.h"
 #include "levenshtein.h"
 
