@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary = 'Simple, fast, levenshtein distance'
   s.description = s.summary
   s.homepage = 'https://github.com/delonnewman/mini-levenshtein'
-  s.license = 'MIT'
+  s.license = 'GPL'
 
   if s.respond_to?(:metadata)
     s.metadata['allowed_push_host'] = 'https://rubygems.org'
