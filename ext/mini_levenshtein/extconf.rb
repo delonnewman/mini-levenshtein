@@ -7,4 +7,5 @@ require 'mkmf'
 dir_config('mini-levenshtein/mini_levenshtein')
 
 # Do the work
+create_header
 create_makefile('mini-levenshtein/mini_levenshtein')
