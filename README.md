@@ -14,7 +14,7 @@ MiniLevenshtein.similarity("levenshtein", "levenstien") # 0.857142...
 
 # Why?
 
-While there are many levenshtein distance implementations for Ruby, non-provided a means to adjust edit scoring to make the calcuations suitable for a similarity ratio.
+While there are many levenshtein distance implementations for Ruby, none provided a means to adjust edit scoring to make the calcuations suitable for a similarity ratio.
 
 # See Also
 
