@@ -63,6 +63,12 @@ RSpec.describe MiniLevenshtein do
         end
       end
     end
+
+    context 'when the two stings share no characters' do
+      it 'will return 0.0' do
+        expect(described_class.similarity('mash', 'pot'))
+      end
+    end
   end
 
   def pairs_of_string_and_non_string
