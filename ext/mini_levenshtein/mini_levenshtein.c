@@ -41,7 +41,7 @@ VALUE rb_lev_edit_distance(VALUE self, VALUE s1, VALUE s2, VALUE xcost)
  * @param string1 [String]
  * @param string2 [String]
  *
- * @return [Integer]
+ * @return [Integer] the edit distance
  */
 VALUE rb_edit_distance(VALUE self, VALUE string1, VALUE string2)
 {
@@ -73,7 +73,7 @@ VALUE rb_edit_distance(VALUE self, VALUE string1, VALUE string2)
  * @param string1 [String]
  * @param string2 [String]
  *
- * @return [Float]
+ * @return [Float] the similarity ratio
  */
 VALUE rb_similarity(VALUE self, VALUE string1, VALUE string2)
 {
@@ -91,7 +91,7 @@ VALUE rb_similarity(VALUE self, VALUE string1, VALUE string2)
     return DBL2NUM(1.0);
   }
   
-  long distance = lev_edit_distance(len1, str1, len2, str2, 0);
+  long distance = lev_edit_distance(len1, str1, len2, str2, 1);
   if (distance == 0) {
     return DBL2NUM(1.0);
   }
