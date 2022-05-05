@@ -10,10 +10,6 @@ MiniLevenshtein.edit_distance("levenshtein", "levenstien") # => 3
 MiniLevenshtein.similarity("levenshtein", "levenstien") # 0.857142...
 ```
 
-# License
-
-[GPL](https://opensource.org/licenses/GPL-2.0)
-
 # Credits
 
 ## Ruby Bindings
@@ -28,5 +24,11 @@ Delon Newman <contact@delonnewman.name>
 - Brian Gough
 
 (see [ext/mini_levenshtein/levenshtein.c](https://github.com/delonnewman/mini-levenshtein/blob/master/ext/mini_levenshtein/levenshtein.c) for more)
+
+# License
+
+The gem is available as open source under the terms of the [GPL](https://opensource.org/licenses/GPL-2.0).
+
+# Support
 
 <a href="https://www.buymeacoffee.com/delonnewman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
