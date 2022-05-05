@@ -1,6 +1,8 @@
-# mini-levenshtein
+[![Ruby](https://github.com/delonnewman/mini-levenshtein/actions/workflows/ruby.yml/badge.svg)](https://github.com/delonnewman/mini-levenshtein/actions/workflows/ruby.yml)
 
-Simple, fast, levenshtein distance
+# MiniLevenshtein
+
+Simple, fast, levenshtein distance for Ruby
 
 # Synopsis
 
