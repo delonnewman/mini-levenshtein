@@ -2,7 +2,7 @@
 
 # MiniLevenshtein
 
-Simple, fast, levenshtein distance for Ruby
+Simple, fast, levenshtein distance and similarity ratio for Ruby
 
 # Synopsis
 
