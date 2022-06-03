@@ -1,2 +1,5 @@
 lib/mini-levenshtein/mini_levenshtein.bundle
 tmp/
+.yardoc/
+doc/
+pkg/
