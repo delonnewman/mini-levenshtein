@@ -1,4 +1,7 @@
 [![Ruby](https://github.com/delonnewman/mini-levenshtein/actions/workflows/ruby.yml/badge.svg)](https://github.com/delonnewman/mini-levenshtein/actions/workflows/ruby.yml)
+[![Contact me on Codementor](https://www.codementor.io/m-badges/delonnewman/book-session.svg)](https://www.codementor.io/@delonnewman?refer=badge)
+
+<a href="https://www.buymeacoffee.com/delonnewman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 # MiniLevenshtein
 
@@ -40,7 +43,3 @@ Delon Newman <contact@delonnewman.name>
 # License
 
 The gem is available as open source under the terms of the [GPL](https://opensource.org/licenses/GPL-2.0).
-
-# Support
-
-<a href="https://www.buymeacoffee.com/delonnewman" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
